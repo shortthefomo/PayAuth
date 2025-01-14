@@ -270,7 +270,7 @@
                 console.log('auth', tx_json)
 
 
-                const request = { custom_meta: { instruction: `Authorize Account for Deposits`}, txjson: tx_json, signers: this.$store.getters.getAccount }
+                const request = { custom_meta: { instruction: `Authorize Account for Deposits`}, txjson: tx_json, options: { signers: this.$store.getters.getAccount }}
                 
                 console.log('request', request)
                 const payload = await this.Sdk.payload.createAndSubscribe(request, async event => {
@@ -322,7 +322,7 @@
                 console.log('auth', tx_json)
 
 
-                const request = { custom_meta: { instruction: `Authorize Account for Deposits`}, txjson: tx_json, signers: this.$store.getters.getAccount }
+                const request = { custom_meta: { instruction: `Authorize Account for Deposits`}, txjson: tx_json, options: { signers: this.$store.getters.getAccount }}
                 
                 console.log('request', request)
                 const payload = await this.Sdk.payload.createAndSubscribe(request, async event => {
@@ -369,7 +369,7 @@
                 }
                 console.log('auth', tx_json)
 
-                const request = { custom_meta: { instruction: `Enable Deposit Authorization`}, txjson: tx_json, signers: this.$store.getters.getAccount }
+                const request = { custom_meta: { instruction: `Enable Deposit Authorization`}, txjson: tx_json, options: { signers: this.$store.getters.getAccount }}
                 
                 console.log('request', request)
                 const payload = await this.Sdk.payload.createAndSubscribe(request, async event => {
