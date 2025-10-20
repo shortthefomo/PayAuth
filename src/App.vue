@@ -70,7 +70,7 @@
 
                 const servers = [tokenData.nodewss]
                 if (tokenData.nodetype == 'MAINNET') {
-                    servers.unshift('wss://node.panicbot.xyz')
+                    servers.unshift('wss://xrpl.panicbot.app')
                 }
                 console.log('wss servers', servers)
                 
